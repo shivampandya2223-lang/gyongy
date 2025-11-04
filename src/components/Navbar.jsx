@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -7,7 +6,7 @@ const Navbar = () => {
       {/* --- Left: Logo --- */}
       <div className="flex items-center gap-2">
         <img
-          src="/assets/logo.svg" // your logo path
+          src="/assets/logo.svg"
           alt="Company Logo"
           className="h-10 w-10 object-contain"
         />
@@ -16,23 +15,50 @@ const Navbar = () => {
 
       {/* --- Right: Menu --- */}
       <div className="flex items-center gap-10 text-lg">
-        <Link to="#about" className="hover:text-pink-500 transition">
+        <Link
+          to="about"
+          smooth={true}
+          duration={600}
+          offset={-80} // adjust for fixed navbar height
+          className="cursor-pointer hover:text-pink-500 transition"
+        >
           About
         </Link>
-        <Link to="#services" className="hover:text-pink-500 transition">
+        <Link
+          to="services"
+          smooth={true}
+          duration={600}
+          offset={-80}
+          className="cursor-pointer hover:text-pink-500 transition"
+        >
           Services
         </Link>
-        <Link to="#portfolio" className="hover:text-pink-500 transition">
+        <Link
+          to="portfolio"
+          smooth={true}
+          duration={600}
+          offset={-80}
+          className="cursor-pointer hover:text-pink-500 transition"
+        >
           Portfolio
         </Link>
-        <Link to="#experience" className="hover:text-pink-500 transition">
+        <Link
+          to="experience"
+          smooth={true}
+          duration={600}
+          offset={-80}
+          className="cursor-pointer hover:text-pink-500 transition"
+        >
           Experience
         </Link>
 
         {/* --- Contact Button --- */}
         <Link
-          to="#footer"
-          className="px-5 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold"
+          to="footer"
+          smooth={true}
+          duration={600}
+          offset={1000}
+          className="cursor-pointer px-5 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold"
         >
           Contact
         </Link>

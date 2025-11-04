@@ -125,7 +125,7 @@ const About = () => {
   ];
 
   return (
-    <div ref={aboutRef} className=" h-full w-screen bg-black">
+    <div ref={aboutRef} className="about h-full w-screen bg-black">
       <div className=" pl-20 pt-40">
         <div ref={textDivRef}>
           <p

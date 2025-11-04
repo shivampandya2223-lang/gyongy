@@ -43,7 +43,7 @@ const Tpage = () => {
   return (
     <div
       ref={container}
-      className="absolute z-100 h-screen w-screen overflow-hidden flex flex-col"
+      className="absolute z-200 h-screen w-screen overflow-hidden flex flex-col"
     >
       <div className="bar bg-black h-[20%] w-full"></div>
       <div className="bar bg-black h-[20%] w-full"></div>
