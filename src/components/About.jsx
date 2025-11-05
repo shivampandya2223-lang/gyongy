@@ -21,7 +21,7 @@ const About = () => {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "top 60%", // animation starts when section enters viewport
-        toggleActions: "restart restart restart restart",
+        toggleActions: "restart restart restart none",
         // ↑ means: play once on enter, don't repeat on scroll back
         markers: false, // remove this later
       },
@@ -72,6 +72,7 @@ const About = () => {
     gsap.to(greenDotRef.current, {
       scale: 7,
       opacity: 0,
+      delay: 2,
       duration: 1.3,
       repeat: -1,
       yoyo: false,
@@ -88,27 +89,27 @@ const About = () => {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "center center",
-        end: "+=1200",
+        end: "+=700",
         pinSpacing: true,
         pin: mainRef.current,
-        toggleActions: "play reverse play reverse",
+        toggleActions: "play none play reverse",
       },
     });
 
     maintl.to(textDivRef.current, {
       yPercent: -100,
       duration: 1,
-      ease: "none",
+      ease: "power2.inOut",
     });
     maintl
       // Line 1 highlight
-      .to("#line1", { color: "#ffffff", duration: 0.5, ease: "none" })
+      .to("#line1", { color: "#707070", duration: 0.1, ease: "power4.out" })
       // Line 1 back to gray, Line 2 highlight
-      .to("#line1", { color: "#9ca3af", duration: 0.5, ease: "none" })
-      .to("#line2", { color: "#ffffff", duration: 0.5, ease: "none" })
+      .to("#line1", { color: "#ffffff", duration: 0.1, ease: "power4.out" })
+      .to("#line2", { color: "#ffffff", duration: 0.1, ease: "power4.out" })
       // Line 2 back to gray, Line 3 highlight
-      .to("#line2", { color: "#9ca3af", duration: 0.5, ease: "none" })
-      .to("#line3", { color: "#ffffff", duration: 0.5, ease: "none" });
+      .to("#line2", { color: "##707070", duration: 0.1, ease: "power4.out" })
+      .to("#line3", { color: "#ffffff", duration: 0.1, ease: "power4.out" });
   }, []);
 
   //logos
@@ -126,7 +127,7 @@ const About = () => {
 
   return (
     <div ref={aboutRef} className="about h-full w-screen bg-black">
-      <div className=" pl-20 pt-40">
+      <div className=" pl-20 pt-35">
         <div ref={textDivRef}>
           <p
             ref={textRef}

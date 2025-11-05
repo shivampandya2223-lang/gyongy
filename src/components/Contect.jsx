@@ -11,7 +11,7 @@ const Contect = () => {
     text.innerHTML += text.innerHTML;
 
     gsap.to(text, {
-      xPercent: -50, // move halfway (since we doubled text)
+      xPercent: -100, // move halfway (since we doubled text)
       repeat: -1, // infinite loop
       ease: "none",
       duration: 20, // speed of scrolling — smaller = faster
@@ -50,7 +50,7 @@ const Contect = () => {
                 alt="Circle"
               />
               <img
-                className="h-8 w-8 absolute transition-transform duration-300 group-hover:rotate-12"
+                className="h-8 w-8 absolute transition-transform duration-300 group-hover:rotate-30"
                 src={icon.src}
                 alt={`Icon ${i}`}
               />
@@ -105,7 +105,7 @@ const Contect = () => {
       </form>
 
       {/* Moving Text */}
-      <div className="absolute bottom-10 w-full overflow-hidden">
+      <div className="absolute bottom-10 w-full overflow-hidden ">
         <p
           ref={textRef}
           className="text-[200px] font-extrabold whitespace-nowrap opacity-30"

@@ -50,9 +50,9 @@ const SliderPage = () => {
   ];
   useGSAP(() => {
     const sliders = [
-      { ref: sliderRef, direction: "left", duration: 55 },
-      { ref: videoSlider, direction: "right", duration: 65 },
-      { ref: slider3Ref, direction: "left", duration: 55 },
+      { ref: sliderRef, direction: "left", duration: 65 },
+      { ref: videoSlider, direction: "right", duration: 75 },
+      { ref: slider3Ref, direction: "left", duration: 65 },
     ];
 
     sliders.forEach(({ ref, direction, duration }) => {

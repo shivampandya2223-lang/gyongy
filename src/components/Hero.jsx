@@ -7,7 +7,7 @@ const Hero = () => {
       <Tpage />
       <div
         id="hero"
-        className="relative h-screen w-full bg-gray-700 overflow-hidden"
+        className="relative h-screen w-full bg-black overflow-hidden"
       >
         {/* === Background 3D Spline Scene (Right Side) === */}
         <div className="absolute right-0 top-0 w-1/2 h-full pointer-events-none">

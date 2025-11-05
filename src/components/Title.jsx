@@ -112,7 +112,7 @@ const Title = () => {
   });
 
   return (
-    <div className="services min-h-screen w-full bg-black text-white px-20 py-32 pb-10">
+    <div className="services min-h-full w-full bg-black text-white px-20 py-32 pb-10">
       {/* TITLE SECTION */}
       <div className="mb-20">
         <p

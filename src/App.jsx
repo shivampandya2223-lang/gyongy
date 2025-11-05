@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger, ScrollSmoother } from "gsap/all";
 import { useGSAP } from "@gsap/react";
@@ -12,10 +12,13 @@ import Field from "./components/Field";
 import Details from "./components/Details";
 import Contect from "./components/Contect";
 import Navbar from "./components/Navbar";
+import Horizontalscroll from "./components/Horizontal-scroll";
+import ScrollLine from "./components/ScrollLine";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const App = () => {
+  const navRef = useRef(null);
   useGSAP(() => {
     // Create smoother effect
     const smoother = ScrollSmoother.create({
@@ -54,8 +57,9 @@ const App = () => {
   }, []);
 
   return (
-    <div id="smooth-wrapper">
+    <div ref={navRef} id="smooth-wrapper" className="h-full w-full bg-black">
       <Navbar />
+      <ScrollLine />
       <div id="smooth-content" className="relative">
         <div className="content wrapper">
           {/* Each section mimics .section style */}
@@ -66,16 +70,19 @@ const App = () => {
             <Hero />
           </section>
 
-          <section className="flex items-center justify-center ">
+          <section id="about" className=" flex items-center justify-center ">
             <About />
           </section>
 
-          <section className="flex items-center justify-center ">
+          <section className="flex items-center justify-center -mt-px-1">
             <Title />
           </section>
 
           <section className="flex items-center justify-center ">
             <SliderPage />
+          </section>
+          <section className="flex items-center justify-center z-60">
+            <Horizontalscroll />
           </section>
 
           <section className="flex items-center justify-center ">
