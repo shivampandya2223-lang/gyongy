@@ -83,7 +83,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={1000}
-          className="cursor-pointer px-4 py-2 rounded-full bg-gradient-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold text-sm sm:text-base 2xl:text-4xl 2xl:py-8 2xl:px-12 2xl:m-2"
+          className="cursor-pointer px-4 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold text-sm sm:text-base 2xl:text-4xl 2xl:py-8 2xl:px-12 2xl:m-2"
         >
           Contact
         </Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
             smooth={true}
             duration={600}
             offset={1000}
-            className="cursor-pointer px-6 py-2 rounded-full bg-gradient-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold"
+            className="cursor-pointer px-6 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold"
             onClick={() => setMenuOpen(false)}
           >
             Contact
