@@ -14,13 +14,14 @@ const Tpage = () => {
       // Step 1: Shrink height slightly
       tl.fromTo(
         bars,
-        { scaleY: 1, transformOrigin: "end", delay: 5 },
+        { scaleY: 1, transformOrigin: "end", delay: 5, display: "block" },
         {
           scaleY: (i) => 0.1 + i * 0.15,
           duration: 1.4,
 
           ease: "power4.inOut",
           stagger: 0.1,
+          display: "none",
         }
       );
 

@@ -73,16 +73,15 @@ const SliderPage = () => {
           duration,
           ease: "none",
           repeat: -1,
-          paused: true, // start paused
+          paused: true,
         }
       );
 
-      // Activate animation when element is 40% visible
       ScrollTrigger.create({
         trigger: el,
-        start: "top 90%", // starts when top of slider hits 60% of viewport height
+        start: "top 90%",
         onEnter: () => tl.play(),
-        onLeaveBack: () => tl.pause(), // pause when scrolling back up
+        onLeaveBack: () => tl.pause(),
       });
     });
   });
@@ -102,11 +101,13 @@ const SliderPage = () => {
               </div>
             ))}
           </div>
-          <div className="absolute h-full w-[60%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
-            <div className="pl-20">
-              <h1 className="text-6xl  text-white">UXUI</h1>
+          <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
+            <div className="pl-2 lg:pl-20 2xl:pl-30 md:pl-10">
+              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl sm:text-2xl   text-white">
+                UXUI
+              </h1>
               <div className="flex flex-row gap-1 w-full whitespace-nowrap items-center">
-                <p className="text-sm text-gray-400">
+                <p className="hidden md:flex lg:flex 2xl:flex lg:text-sm 2xl:text-xl  md:text-[8px] text-gray-400">
                   Explore my journey with UXUI
                 </p>
                 <img src="/assets/line.svg" alt="line" className="h-6 w-full" />
@@ -132,11 +133,13 @@ const SliderPage = () => {
               )
             )}
           </div>
-          <div className="absolute h-full w-[60%] flex items-center pt-10 justify-end bg-linear-to-l from-black via-black to-transparent z-10 right-0 top-0 text-white">
-            <div className="pr-20 text-right">
-              <h1 className="text-6xl text-white">MOTION</h1>
+          <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center pt-10 justify-end bg-linear-to-l from-black via-black to-transparent z-10 right-0 top-0 text-white">
+            <div className="pr-4 lg:pr-20 md:pr-10 text-right">
+              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl text-white">
+                MOTION
+              </h1>
               <div className="flex flex-row-reverse gap-1 w-full whitespace-nowrap items-center">
-                <p className="text-sm text-gray-400">
+                <p className="hidden md:flex lg:flex 2xl:flex lg:text-sm 2xl:text-xl md:text-[8px] text-gray-400">
                   Explore my journey with motion
                 </p>
                 <img
@@ -162,11 +165,13 @@ const SliderPage = () => {
               </div>
             ))}
           </div>
-          <div className="absolute h-full w-[60%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
-            <div className="pl-20">
-              <h1 className="text-6xl  text-white">GEN AI</h1>
+          <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
+            <div className="lg:pl-20 2xl:pl-30 md:pl-10 pl-2">
+              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl sm:text-2xl  text-white">
+                GEN AI
+              </h1>
               <div className="flex flex-row gap-1 w-full whitespace-nowrap items-center">
-                <p className="text-sm text-gray-400">
+                <p className="hidden md:flex lg:flex 2xl:flex lg:text-sm 2xl:text-xl  md:text-[8px] text-gray-400">
                   Explore my journey with GENAI
                 </p>
                 <img

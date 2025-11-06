@@ -89,7 +89,7 @@ const About = () => {
       scrollTrigger: {
         trigger: aboutRef.current,
         start: "center center",
-        end: "+=700",
+        end: "+=800",
         pinSpacing: true,
         pin: mainRef.current,
         toggleActions: "play none play reverse",
@@ -103,13 +103,14 @@ const About = () => {
     });
     maintl
       // Line 1 highlight
-      .to("#line1", { color: "#707070", duration: 0.1, ease: "power4.out" })
+
+      .to("#line1", { color: "#ffffff", ease: "expo.inOut" })
       // Line 1 back to gray, Line 2 highlight
-      .to("#line1", { color: "#ffffff", duration: 0.1, ease: "power4.out" })
-      .to("#line2", { color: "#ffffff", duration: 0.1, ease: "power4.out" })
+      .to("#line1", { color: "#707070", ease: "expo.inOut" })
+      .to("#line2", { color: "#ffffff", ease: "expo.inOut" })
       // Line 2 back to gray, Line 3 highlight
-      .to("#line2", { color: "##707070", duration: 0.1, ease: "power4.out" })
-      .to("#line3", { color: "#ffffff", duration: 0.1, ease: "power4.out" });
+      .to("#line2", { color: "#707070", ease: "expo.inOut" })
+      .to("#line3", { color: "#ffffff", ease: "expo.inOut" });
   }, []);
 
   //logos
@@ -126,18 +127,18 @@ const About = () => {
   ];
 
   return (
-    <div ref={aboutRef} className="about h-full w-screen bg-black">
-      <div className=" pl-20 pt-35">
+    <div ref={aboutRef} className="about h-full w-screen bg-black 2xl:pb-20">
+      <div className="pl-6 pr-4 lg:pl-20 sm:pl-20 sm:pr-20 lg:pt-35 md:pt-3 2xl:pb-40">
         <div ref={textDivRef}>
           <p
             ref={textRef}
-            className="pb-5 text-2xl font-bold bg-linear-to-b from-pink-600     to-blue-600 bg-clip-text text-transparent animate-gradient-x"
+            className="lg:pb-5 lg:text-2xl font-bold bg-linear-to-b from-pink-600  to-blue-600 bg-clip-text text-transparent animate-gradient-x md:text-[20px]"
           >
             Hi, I'm Gyöngy
           </p>
           <div
             ref={titleRef}
-            className="text-[80px] space-x-2.5 text-white leading-none flex tracking-tight"
+            className="hidden lg:text-[80px] md:text-[30px] space-x-2.5 sm:text-white leading-none lg:flex md:flex tracking-tight"
           >
             <span className="font-thin">V</span>
             <span className="font-extralight">I</span>
@@ -156,10 +157,10 @@ const About = () => {
           </div>
         </div>
         <div ref={mainRef} className="pt-25">
-          <div className="flex flex-row justify-between pl-50 pr-100 items-center">
+          <div className="flex flex-row justify-between lg:pl-50 lg:pr-100  md:pr-50 items-center">
             <div className="flex items-center gap-9">
               <img
-                className="h-30 w-30 rounded-full"
+                className="h-14 w-14 lg:h-30 lg:w-30  md:h-15 md:w-15 sm:h-12 sm:w-12  rounded-full"
                 src="https://framerusercontent.com/images/FdSvnaCnrFIBEkT78qa1MVb9ME.png?width=500&height=505"
               />
               <div>
@@ -177,14 +178,14 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-5 h-13 w-13 opacity-50 ">
+            <div className="lg:flex hidden md:flex  h-10 w-10 gap-5 lg:h-13 lg:w-13 md:h-9 md:w-9  opacity-50 ">
               <img src="https://framerusercontent.com/images/uMLlm5CiNgjx3hyfiA6c1KmJmoo.png" />
               <img src="https://framerusercontent.com/images/801ESF8qsdY28Az0my3MNUOSS0.png" />
             </div>
           </div>
           <div
             ref={peregraphRef}
-            className="text-white pl-50 pr-80 text-2xl pt-10 leading-12"
+            className="sm:text-white lg:pl-50 lg:pr-80 lg:text-2xl 2xl:text-5xl lg:pt-10  lg:leading-12 2xl:leading-20 "
           >
             <p>
               <span className=" text-gray-500 " id="line1">
@@ -202,9 +203,9 @@ const About = () => {
               </span>
             </p>
           </div>
-          <div className="relative overflow-hidden w-full mt-16 pb-20">
-            <div className="absolute left-0 top-0 h-full w-100  bg-linear-to-r from-black to-transparent pointer-events-none z-10"></div>
-            <div className="absolute right-0 top-0 h-full w-100 bg-linear-to-l from-black to-transparent pointer-events-none z-10"></div>
+          <div className="relative overflow-hidden w-full mt-16 lg:pb-20">
+            <div className="absolute left-0 top-0 h-full w-100  bg-linear-to-r from-black/80 to-transparent pointer-events-none z-10"></div>
+            <div className="absolute right-0 top-0 h-full w-100 bg-linear-to-l from-black/80 to-transparent pointer-events-none z-10"></div>
             <div
               ref={logosRef}
               className="flex gap-20 items-center w-max opacity-50"

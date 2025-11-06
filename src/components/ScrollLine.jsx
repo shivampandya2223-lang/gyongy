@@ -55,7 +55,7 @@ const ScrollLine = () => {
   }, []);
 
   return (
-    <div className="fixed top-1/2 right-10 -translate-y-1/2 z-[100] flex flex-col items-end gap-4">
+    <div className=" hidden fixed top-1/2 right-10 -translate-y-1/2 z-100 lg:flex 2xl:flex flex-col items-end gap-4">
       {[...Array(9)].map((_, i) => (
         <div
           key={i}

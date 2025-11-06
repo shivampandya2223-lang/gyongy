@@ -121,16 +121,21 @@ const Title = () => {
         >
           Creative
         </p>
-        <AnimatedText
-          text="service"
-          className="text-[80px] leading-none tracking-tight"
-        />
+        <div className="hidden lg:text-[80px] md:text-[30px] space-x-2.5 sm:text-white leading-none lg:flex md:flex tracking-tight">
+          <span className="font-thin">S</span>
+          <span className="font-extralight">E</span>
+          <span className="font-light">R</span>
+          <span className="font-normal">V</span>
+          <span className="font-medium">I</span>
+          <span className="font-semibold">C</span>
+          <span className="font-bold ">E</span>
+        </div>
       </div>
 
       {/* SERVICES SECTION */}
-      <div className="services-container relative w-full flex flex-col items-end text-right space-y-20 pr-40">
+      <div className="services-container relative w-full flex flex-col items-center lg:pl-20 text-right space-y-10 lg:space-y-20 md:space-y-20 sm:space-y-20 lg:pr-40 md:pl-30">
         {/* MOVING ARROW */}
-        <div className="absolute pr-200 top-0 bottom-0 w-full flex items-start justify-end  pointer-events-none">
+        <div className="absolute hidden 2xl:pr-400 md:pr-140 lg:pr-260 md:scale-100 top-0 bottom-0 w-full md:flex lg:flex 2xl:flex items-start justify-end  pointer-events-none">
           <img
             className="moving-arrow h-12 w-auto"
             src="/assets/line.svg"
@@ -145,7 +150,7 @@ const Title = () => {
             className="service-item max-w-3xl border-b border-gray-700 w-full"
           >
             <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+              <h2 className="lg:text-2xl 2xl:text-3xl font-semibold text-pink-400 mb-3">
                 {data.title}
               </h2>
               <button
