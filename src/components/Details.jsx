@@ -26,7 +26,15 @@ const Details = () => {
 
     // Move the year/label text as the user scrolls
     gsap.to(textRef.current, {
-      y: () => window.innerHeight * 2.28,
+      y: () => {
+        const h = window.innerHeight;
+
+        if (window.innerWidth >= 1536) {
+          return h * 1.5;
+        } else {
+          return h * 2.28;
+        }
+      },
       ease: "none",
       scrollTrigger: {
         trigger: blocks[0],
