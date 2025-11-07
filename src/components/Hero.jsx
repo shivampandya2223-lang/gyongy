@@ -10,7 +10,7 @@ const Hero = () => {
         className="relative h-screen w-full bg-black overflow-hidden"
       >
         {/* === Background 3D Spline Scene (Right Side) === */}
-        <div className="absolute  top-0 w-1/2 h-full 2xl:scale-150 2xl:origin-center pointer-events-none right-0 sm:scale-75 ">
+        <div className="absolute  top-0 w-1/2 h-full  pointer-events-none right-0 sm:scale-75 ">
           <Spline
             scene="https://prod.spline.design/aNGDIMdNaJW38uXu/scene.splinecode"
             className=""
@@ -24,11 +24,11 @@ const Hero = () => {
   xs:pl-6 xs:-mt-10
   max-sm:absolute max-sm:top-[15%] max-sm:left-5 max-sm:w-[90%]"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-9xl font-bold mb-4 bg-linear-to-b from-pink-600 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-linear-to-b from-pink-600 to-blue-600 bg-clip-text text-transparent animate-gradient-x">
             Let's
           </h1>
 
-          <div className="flex leading-none text-[60px] lg:text-[200px] 2xl:text-[200px]  sm:text-[200px]  md:text-[100px]">
+          <div className="flex leading-none text-[60px] lg:text-[200px]   sm:text-[200px]  md:text-[100px]">
             <span className="font-thin">C</span>
             <span className="font-light">R</span>
             <span className="font-normal">E</span>

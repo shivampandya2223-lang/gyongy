@@ -92,17 +92,17 @@ const Details = () => {
           <div ref={textRef} className="flex items-center">
             <div>
               {" "}
-              <h1 ref={yearRef} className="year hidden lg:flex 2xl:flex ">
+              <h1 ref={yearRef} className="year hidden lg:flex  ">
                 2025
               </h1>
-              <h1 ref={labelRef} className="label hidden lg:flex 2xl:flex ">
+              <h1 ref={labelRef} className="label hidden lg:flex  ">
                 Now
               </h1>
             </div>
             <img
               ref={lineRef}
               src="/assets/line.svg"
-              className="h-7 w-full hidden lg:flex 2xl:flex "
+              className="h-7 w-full hidden lg:flex  "
             />
           </div>
         </div>

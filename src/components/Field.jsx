@@ -70,7 +70,7 @@ const Field = () => {
     <div className="flex h-screen w-screen bg-black items-center justify-center">
       <div className="h-[450px] w-[90%] flex flex-row items-start justify-center">
         {/* Left border with vertical line */}
-        <div className="hidden md:flex lg:flex 2xl:flex relative h-full w-[30%] border-r border-gray-600  justify-end pr-4">
+        <div className="hidden md:flex lg:flex  relative h-full w-[30%] border-r border-gray-600  justify-end pr-4">
           <img
             ref={lineRef}
             src="/assets/line.svg"

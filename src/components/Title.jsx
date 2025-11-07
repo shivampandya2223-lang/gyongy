@@ -135,7 +135,7 @@ const Title = () => {
       {/* SERVICES SECTION */}
       <div className="services-container relative w-full flex flex-col items-center lg:pl-20 text-right space-y-10 lg:space-y-20 md:space-y-20 sm:space-y-20 lg:pr-40 md:pl-30">
         {/* MOVING ARROW */}
-        <div className="absolute hidden 2xl:pr-400 md:pr-140 lg:pr-260 md:scale-100 top-0 bottom-0 w-full md:flex lg:flex 2xl:flex items-start justify-end  pointer-events-none">
+        <div className="absolute hidden 2xl:pr-320 md:pr-140 lg:pr-260 md:scale-100 top-0 bottom-0 w-full md:flex lg:flex 2xl:flex items-start justify-end  pointer-events-none">
           <img
             className="moving-arrow h-12 w-auto"
             src="/assets/line.svg"

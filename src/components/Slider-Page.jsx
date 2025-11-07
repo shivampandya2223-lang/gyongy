@@ -101,9 +101,9 @@ const SliderPage = () => {
               </div>
             ))}
           </div>
-          <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
+          <div className="absolute h-full w-[20%] lg:w-[60%]  md:w-[50%] sm:w-[10%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
             <div className="pl-2 lg:pl-20 2xl:pl-30 md:pl-10">
-              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl sm:text-2xl   text-white">
+              <h1 className="text-2xl lg:text-6xl md:text-2xl sm:text-2xl   text-white">
                 UXUI
               </h1>
               <div className="flex flex-row gap-1 w-full whitespace-nowrap items-center">
@@ -135,7 +135,7 @@ const SliderPage = () => {
           </div>
           <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center pt-10 justify-end bg-linear-to-l from-black via-black to-transparent z-10 right-0 top-0 text-white">
             <div className="pr-4 lg:pr-20 md:pr-10 text-right">
-              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl text-white">
+              <h1 className="text-2xl lg:text-6xl  md:text-2xl text-white">
                 MOTION
               </h1>
               <div className="flex flex-row-reverse gap-1 w-full whitespace-nowrap items-center">
@@ -167,7 +167,7 @@ const SliderPage = () => {
           </div>
           <div className="absolute h-full w-[20%] lg:w-[60%] 2xl:w-[70%] md:w-[50%] sm:w-[10%] flex items-center  bg-linear-to-r from-black via-black to-transparent z-10 left-0 text-white">
             <div className="lg:pl-20 2xl:pl-30 md:pl-10 pl-2">
-              <h1 className="text-2xl lg:text-6xl 2xl:text-9xl md:text-2xl sm:text-2xl  text-white">
+              <h1 className="text-2xl lg:text-6xl  md:text-2xl sm:text-2xl  text-white">
                 GEN AI
               </h1>
               <div className="flex flex-row gap-1 w-full whitespace-nowrap items-center">

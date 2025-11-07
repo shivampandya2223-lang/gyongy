@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       {/* --- Left: Logo Section --- */}
       <div className="relative flex items-center justify-center group">
-        <div className="relative h-14 w-14 sm:h-8 sm:w-8 md:h-15 md:w-15 flex items-center justify-center pr-5 sm:pr-7 2xl:h-20 2xl:w-20 lg:h-14 lg:w-14 ">
+        <div className="relative h-14 w-14 sm:h-8 sm:w-8 md:h-15 md:w-15 flex items-center justify-center pr-5 sm:pr-7  lg:h-14 lg:w-14 ">
           <img
             src="/assets/logo.svg"
             alt="Logo"
@@ -42,13 +42,13 @@ const Navbar = () => {
           <FaHome className="absolute text-white lg:text-sm 2xl:text-2xl sm:text-xl md:text-sm opacity-90 transition-all duration-700 group-hover:scale-110" />
         </div>
 
-        <div className="absolute flex 2xl:pl-18 flex-row items-center gap-1 sm:gap-2 text-center transition-all duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:translate-x-10 sm:group-hover:translate-x-14 2xl:h-20">
+        <div className="absolute flex  flex-row items-center gap-1 sm:gap-2 text-center transition-all duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:translate-x-10 sm:group-hover:translate-x-14 ">
           <img
             src="/assets/circle.svg"
             alt="Circle"
-            className="hidden lg:block  lg:h-9 lg:w-9 lg:ml-2 2xl:h-14 2xl:w-14 md:h-9 md:w-9 2xl:mr-2 object-contain transition-transform duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:rotate-25"
+            className="hidden lg:block  lg:h-9 lg:w-9 lg:ml-2  md:h-9 md:w-9  object-contain transition-transform duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:rotate-25"
           />
-          <h1 className="pl-20 sm:pl-0 text-lg sm:text-xl md:text-[20px] lg:pl-0 md:pl-17 2xl:text-5xl font-bold tracking-wide text-white transition-all duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:text-pink-200">
+          <h1 className="pl-20 sm:pl-0 text-lg sm:text-xl md:text-[20px] lg:pl-0 md:pl-17 font-bold tracking-wide text-white transition-all duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:text-pink-200">
             <span className="font-medium">G</span>
             <span className="font-normal">E</span>
             <span className="font-light">N</span>
@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
 
       {/* --- Right: Menu --- */}
-      <div className="hidden md:flex  items-center gap-6 lg:gap-10 2xl:gap-30 2xl:text-4xl text-base lg:text-lg ">
+      <div className="hidden md:flex  items-center gap-6 lg:gap-10   text-base lg:text-lg ">
         {[
           { name: "About", to: "about" },
           { name: "Services", to: "services" },
@@ -83,7 +83,7 @@ const Navbar = () => {
           smooth={true}
           duration={600}
           offset={1000}
-          className="cursor-pointer px-4 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold text-sm sm:text-base 2xl:text-4xl 2xl:py-8 2xl:px-12 2xl:m-2 "
+          className="cursor-pointer px-4 py-2 rounded-full bg-linear-to-r from-pink-600 to-blue-600 hover:opacity-90 transition font-semibold text-sm sm:text-base  "
         >
           Contact
         </Link>

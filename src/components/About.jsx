@@ -127,7 +127,7 @@ const About = () => {
   ];
 
   return (
-    <div ref={aboutRef} className="about h-full w-screen bg-black 2xl:pb-20">
+    <div ref={aboutRef} className="about h-full w-screen bg-black ">
       <div className="pl-6 pr-4 lg:pl-20 sm:pl-20 sm:pr-20 lg:pt-35 md:pt-3 2xl:pb-40">
         <div ref={textDivRef}>
           <p
@@ -185,7 +185,7 @@ const About = () => {
           </div>
           <div
             ref={peregraphRef}
-            className="sm:text-white lg:pl-50 lg:pr-80 lg:text-2xl 2xl:text-5xl lg:pt-10  lg:leading-12 2xl:leading-20 "
+            className="sm:text-white lg:pl-50 lg:pr-80 lg:text-2xl  lg:pt-10  lg:leading-12 "
           >
             <p>
               <span className=" text-gray-500 " id="line1">
