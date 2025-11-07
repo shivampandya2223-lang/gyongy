@@ -78,10 +78,10 @@ const App = () => {
             <Title />
           </section>
 
-          <section className="flex items-center justify-center ">
+          <section className="flex items-center justify-center  ">
             <SliderPage />
           </section>
-          <section className="flex items-center justify-center z-60">
+          <section className="items-center justify-center z-60">
             <Horizontalscroll />
           </section>
 

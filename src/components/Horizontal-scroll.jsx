@@ -38,7 +38,7 @@ const Horizontalscroll = () => {
   return (
     <section
       ref={sectionRef}
-      className="h-screen bg-black text-white overflow-hidden flex items-center"
+      className="hidden lg:flex  h-screen bg-black text-white overflow-hidden  items-center"
     >
       <h1
         ref={textRef}

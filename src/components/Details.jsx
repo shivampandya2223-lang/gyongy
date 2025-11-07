@@ -75,23 +75,30 @@ const Details = () => {
   });
 
   return (
-    <div ref={detailRef} className="experience h-full w-screen bg-black">
+    <div
+      ref={detailRef}
+      className="experience h-full w-screen bg-black pt-4 pb-8"
+    >
       <div className="flex flex-row">
-        <div className="w-[25%] text-white  text-4xl items-center pl-20">
+        <div className=" lg:w-[25%] text-white  lg:text-4xl items-center lg:pl-20">
           <div ref={textRef} className="flex items-center">
             <div>
               {" "}
-              <h1 ref={yearRef} className="year">
+              <h1 ref={yearRef} className="year hidden lg:flex 2xl:flex ">
                 2025
               </h1>
-              <h1 ref={labelRef} className="label">
+              <h1 ref={labelRef} className="label hidden lg:flex 2xl:flex ">
                 Now
               </h1>
             </div>
-            <img ref={lineRef} src="/assets/line.svg" className="h-7 w-full" />
+            <img
+              ref={lineRef}
+              src="/assets/line.svg"
+              className="h-7 w-full hidden lg:flex 2xl:flex "
+            />
           </div>
         </div>
-        <div className="w-[75%] text-white text-left pr-50">
+        <div className="w-full  lg:w-[75%] text-white text-center md:text-left lg:text-left pr-4 pl-4 sm:items-center lg:pr-50">
           {/* 1 */}
           <div className="info-block">
             <h1 className="text-4xl bg-linear-to-b from-[rgb(248,91,225)] to-[rgb(156,111,252)] bg-clip-text text-transparent p-4">
